@@ -121,16 +121,35 @@ let mix = ["John", 23, { name: "Shaun" }];
 
 let getIndex = friends.indexOf("faaiz");
 
-console.log(getIndex);
+// console.log(getIndex);
 
 // concate
 
 let getMixture = mix.concat(friends);
 [friends, mix];
-console.log(getMixture);
+// console.log(getMixture);
 
 //push
 
-let newArray = friends.push("Aamir");
+// console.log(friends.push("Aamir", "john", "aliza"), friends);
 
-console.log(newArray, friends);
+// console.log(newArray, friends);
+
+//pop
+
+// let poppedArr = friends.pop();
+
+// console.log(poppedArr, friends);
+
+//shift
+
+// let shiftArray = friends.shift();
+
+// console.log(shiftArray);
+// console.log(friends);
+
+//unshift
+
+// let unshiftArr = friends.unshift("Ahmed");
+
+// console.log(unshiftArr);
