@@ -180,4 +180,28 @@ let numTwo = 33;
 
 // console.log(Boolean(undefined));
 
-console.log(3 === "3");
+// console.log(3 === "3");
+
+//switch
+
+// let grade = "70";
+
+// switch (grade) {
+//   case "70":
+//     console.log("Grade A");
+//     break;
+//   case "B":
+//     console.log("Grade B");
+//     break;
+//   case "C":
+//     console.log("Grade C");
+//     break;
+//   case "D":
+//     console.log("Grade D");
+//     break;
+//   case "E":
+//     console.log("Grade E");
+//     break;
+//   default:
+//     console.log("Failed");
+// }
