@@ -55,10 +55,84 @@
 
 // greet("Ali", 23);
 
-const calcArea = function (radius) {
-  return 3.142 * radius ** 2;
-};
+// const calcArea = function (radius) {
+//   return 3.142 * radius ** 2;
+// };
 // console.log(a);
 
-const area = calcArea(45);
-console.log(area);
+// const area = calcArea(45);
+// console.log(area);
+
+//arrow function
+
+// const calcArea = (radius) => 3.142 * radius ** 2;
+
+// let area = calcArea(50);
+
+// console.log(area);
+// const greet = function (name) {
+//   console.log("Hello", name);
+// };
+
+// greet();
+
+60 + 60 * 0.4;
+
+const greet = (name) => console.log("Hello,", name);
+
+// greet("Jazzel");
+
+// const totalExpense = function (items, tax) {
+//   let total = 0;
+//   for (let i = 0; i < items.length; i++) {
+//     total += items[i] + items[i] * tax;
+//   }
+//   return total;
+// };
+
+// const total = totalExpense([40, 60, 80, 46], 0.6);
+// console.log(total);
+
+// const totalExpense = (items, tax) => {
+//   let total = 0;
+//   for (let i = 0; i < items.length; i++) {
+//     total += items[i] + items[i] * tax;
+//   }
+//   return total;
+// };
+
+// const total = totalExpense([40, 60, 80, 46], 0.6);
+// console.log(total);
+
+// const name = "Ali";
+
+// console.log(name.toUpperCase());
+
+// calceArea()
+
+// const funcOne = (callback) => {
+//   let value = "test";
+//   callback(value);
+// };
+
+// funcOne(function () {
+//   console.log("test");
+// });
+
+// let names = ["hammad", "faaiz", "mudassir", "mubashir"];
+
+// const itrator = (name, ind) => {
+//   console.log(`${name} - ${ind}`);
+// };
+
+// itrator()
+names.forEach(itrator);
+
+let user = {
+  name: "jameel",
+  age: 32,
+  email: "abc@xyz.com",
+  blogs: ["the kinght king", "the sea darkness"],
+};
+
+console.log(user);
