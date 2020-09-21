@@ -126,13 +126,23 @@ const greet = (name) => console.log("Hello,", name);
 // };
 
 // itrator()
-names.forEach(itrator);
+// names.forEach(itrator);
 
-let user = {
-  name: "jameel",
-  age: 32,
-  email: "abc@xyz.com",
-  blogs: ["the kinght king", "the sea darkness"],
-};
+// const createQuote = (quote, callback) => {
+//   let myQuote = "Like I always say, " + quote;
+//   callback(myQuote);
+// };
 
-console.log(user);
+// const logQuote = (quote) => {
+//   console.log(quote);
+// };
+
+// createQuote("eat your vegetables!", logQuote);
+
+// let arr = ["mubashir", "mudassir", "hammad", "faaiz"];
+
+// const callback = (value, index) => {
+//   console.log(value + " " + index);
+// };
+
+// arr.forEach(callback);
