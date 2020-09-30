@@ -51,11 +51,57 @@
 // containerFluid.classList.add("parent");
 // containerFluid.classList.remove("contaner-fluid");
 
-const paras = document.querySelectorAll(".container-fluid p");
+// const paras = document.querySelectorAll(".container-fluid p");
 
-paras.forEach((para) => {
-  if (!para.innerText.includes("amet")) {
-    para.classList.remove("success");
-    para.classList.add("error");
-  }
+// paras.forEach((para) => {
+//   if (!para.innerText.includes("amet")) {
+//     para.classList.remove("success");
+//     para.classList.add("error");
+//   }
+// });
+
+// paras.forEach((para) => {
+//   para.classList.toggle("success");
+// });
+
+// const title = document.querySelector("h1");
+
+// console.log(title);
+// console.log(title.parentElement);
+// console.log(title.previousElementSibling);
+// console.log(title.nextElementSibling);
+// console.log(title.parentElement.parentElement.previousElementSibling);
+// console.log(title.nextElementSibling.children);
+
+//Event Basics
+//step 1
+const button = document.querySelector("button");
+
+//step2 -- step3
+// button.addEventListener("click", () => {
+//   console.log("you clicked me :)");
+// });
+
+const ul = document.querySelector("ul");
+
+// console.log(ul);
+
+button.addEventListener("click", (event) => {
+  // console.log(event.target);
+  ul.innerHTML += `<li>New Todo</li>`;
 });
+
+const lis = document.querySelectorAll("li");
+console.log(lis);
+
+lis.forEach((li) => {
+  li.addEventListener("click", (event) => {
+    // console.log(event.target);
+    event.target.style.textDecoration = "line-through";
+    // event.target.remove();
+  });
+});
+
+// const li = document.querySelector("li");
+// console.log(li);
+// li.remove();
