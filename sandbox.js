@@ -83,24 +83,39 @@ const button = document.querySelector("button");
 // });
 
 const ul = document.querySelector("ul");
+ul.addEventListener("click", (event) => {
+  if (event.target.tagName === "LI") {
+    event.target.style.textDecoration = "line-through";
+    // event.target.remove()
+  } else {
+    console.log("you clicked somewhere else");
+  }
+  // console.log(event.target.tagName);
+});
 
 // console.log(ul);
 
 button.addEventListener("click", (event) => {
   // console.log(event.target);
-  ul.innerHTML += `<li>New Todo</li>`;
+  // ul.innerHTML += `<li>New Todo</li>`;
+  let li = document.createElement("li");
+  li.innerText = "New Todo";
+  ul.append(li);
+  // ul.prepend(li);
 });
 
-const lis = document.querySelectorAll("li");
-console.log(lis);
+// const lis = document.querySelectorAll("li");
+// console.log(lis);
 
-lis.forEach((li) => {
-  li.addEventListener("click", (event) => {
-    // console.log(event.target);
-    event.target.style.textDecoration = "line-through";
-    // event.target.remove();
-  });
-});
+// lis.forEach((li) => {
+//   li.addEventListener("click", (event) => {
+//     console.log(event.target);
+//     event.target.style.textDecoration = "line-through";
+//     event.stopPropagation();
+
+//     event.target.remove();
+//   });
+// });
 
 // const li = document.querySelector("li");
 // console.log(li);
