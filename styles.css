@@ -12,12 +12,14 @@ a {
   text-decoration: none;
   color: white;
 }
+.container {
+  position: relative;
+}
 nav {
   width: 100%;
   background-color: cornflowerblue;
   padding: 15px 0;
   box-shadow: 1px 1px 5px #000000;
-  z-index: 1;
   position: relative;
 }
 ul {
@@ -34,7 +36,6 @@ ul li {
   height: 90vh;
   background: linear-gradient(to right, #373b44, #4286f4);
   color: #ffffff;
-  position: relative;
 }
 .hero {
   width: 80%;
