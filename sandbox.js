@@ -82,27 +82,28 @@ const button = document.querySelector("button");
 //   console.log("you clicked me :)");
 // });
 
-const ul = document.querySelector("ul");
-ul.addEventListener("click", (event) => {
-  if (event.target.tagName === "LI") {
-    event.target.style.textDecoration = "line-through";
-    // event.target.remove()
-  } else {
-    console.log("you clicked somewhere else");
-  }
-  // console.log(event.target.tagName);
-});
+// const ul = document.querySelector("ul");
+// ul.addEventListener("click", (event) => {
+//   if (event.target.tagName === "LI") {
+//     // event.target.style.textDecoration = "line-through";
+//     event.target.classList.toggle("done");
+//     // event.target.remove()
+//   } else {
+//     console.log("you clicked somewhere else");
+//   }
+//   // console.log(event.target.tagName);
+// });
 
 // console.log(ul);
 
-button.addEventListener("click", (event) => {
-  // console.log(event.target);
-  // ul.innerHTML += `<li>New Todo</li>`;
-  let li = document.createElement("li");
-  li.innerText = "New Todo";
-  ul.append(li);
-  // ul.prepend(li);
-});
+// button.addEventListener("click", (event) => {
+//   // console.log(event.target);
+//   // ul.innerHTML += `<li>New Todo</li>`;
+//   let li = document.createElement("li");
+//   li.innerText = "New Todo";
+//   ul.appendChild(li);
+//   // ul.prepend(li);
+// });
 
 // const lis = document.querySelectorAll("li");
 // console.log(lis);
@@ -120,3 +121,21 @@ button.addEventListener("click", (event) => {
 // const li = document.querySelector("li");
 // console.log(li);
 // li.remove();
+
+//copy event
+
+const copywrite = document.querySelector(".copywrite");
+
+copywrite.addEventListener("copy", (event) => {
+  console.log("you'd better not copy my content");
+});
+
+// const hoverMe = document.querySelector(".hover-me");
+// hoverMe.addEventListener("mouseover", () => {
+//   console.log("you hover over me");
+// });
+
+const wheel = document.querySelector(".wheel");
+wheel.addEventListener("mouseover", (e) => {
+  console.log(e.offsetX, e.offsetY);
+});

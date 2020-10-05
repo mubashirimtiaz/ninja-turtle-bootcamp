@@ -5,6 +5,9 @@
     <title>Document</title>
   </head>
   <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
     .success {
       color: green;
       border: 1px solid green;
@@ -16,8 +19,24 @@
       margin: 10px;
     }
     ul {
-      background-color: cyan;
+      /* background-color: cyan; */
       padding: 50px;
+      background-color: #ac725f;
+      box-shadow: 1px 2px 5px #3b3a3a;
+    }
+    ul li {
+      cursor: pointer;
+      list-style: none;
+      display: block;
+      color: #313131;
+      margin: 10px;
+      padding: 10px 5px;
+      background-color: darksalmon;
+      font-size: 1.2rem;
+    }
+    .done {
+      text-decoration: line-through;
+      color: crimson;
     }
   </style>
   <body>
@@ -71,18 +90,45 @@
       <a href="">Google</a>
     
     </div> -->
-    <div class="container">
+    <!-- <div
+      class="container"
+      style="max-width: 550px; margin: auto; text-align: center"
+    >
       <ul>
         <li>Dancing</li>
         <li>Singing</li>
-        <p>hello world</p>
+        
         <li>Walking</li>
         <li>Talking</li>
         <li>Eating</li>
       </ul>
+      <button style="width: 50%; padding: 10px 0">Add Todos</button>
+    </div> -->
+
+    <p class="copywrite">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem odit iure
+      saepe ut aspernatur in deserunt excepturi pariatur harum optio.
+    </p>
+
+    <p class="hover-me">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
+      explicabo?
+    </p>
+
+    <div
+      class="wheel"
+      style="
+        width: 300px;
+        height: 300px;
+        background-color: cornflowerblue;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+      "
+    >
+      <p>hello world</p>
     </div>
 
-    <button>Add Todos</button>
     <!-- 
     <h1>3</h1>
     <button>add</button><button>sub</button> -->
