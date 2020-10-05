@@ -47,6 +47,9 @@ ul li {
   flex-direction: column;
   text-align: center;
 }
+.hero h1 {
+  font-weight: 300;
+}
 .hero p {
   margin: 15px 0;
   text-align: justify;
@@ -88,6 +91,8 @@ ul li {
   color: #373b44;
   padding: 50px;
   text-align: center;
+  border-radius: 2px;
+  box-shadow: 1px 1px 8px #ffffff;
 }
 .close-popup {
   background-color: crimson;
@@ -97,4 +102,5 @@ ul li {
   border: 0;
   border-radius: 3px;
   cursor: pointer;
+  box-shadow: 1px 1px 5px #373b44;
 }
