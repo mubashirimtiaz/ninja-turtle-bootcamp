@@ -8,3 +8,8 @@ openPopup.addEventListener("click", () => {
 closePopup.addEventListener("click", () => {
   backdrop.style.display = "none";
 });
+backdrop.addEventListener("click", (e) => {
+  if (e.target.className === "drop") {
+    backdrop.style.display = "none";
+  }
+});

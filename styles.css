@@ -17,7 +17,7 @@ a {
 }
 nav {
   width: 100%;
-  background-color: cornflowerblue;
+  background-color: #321046;
   box-shadow: 1px 1px 5px #000000;
   position: relative;
 }
@@ -34,7 +34,8 @@ ul li {
 .banner {
   width: 100%;
   height: calc(100vh - 50px);
-  background: linear-gradient(to right, #373b44, #4286f4);
+  background: radial-gradient(circle, #64007b 0, #3e1456 100%);
+
   color: #ffffff;
 }
 .hero {
@@ -49,6 +50,7 @@ ul li {
 }
 .hero h1 {
   font-weight: 300;
+  color: orange;
 }
 .hero p {
   margin: 15px 0;
@@ -56,17 +58,17 @@ ul li {
 }
 .open-popup {
   padding: 10px 20px;
-  background-color: darkblue;
+  background-color: #321046;
   color: #fff;
   border: 0;
   outline: none;
   font-size: 1.2rem;
   border-radius: 5px;
-  box-shadow: 1px 1px 5px #000000;
   cursor: pointer;
 }
 .open-popup:hover {
-  background-color: #0303b1;
+  background-color: #311044;
+  box-shadow: 1px 1px 5px #321046;
 }
 .backdrop {
   width: 100%;
