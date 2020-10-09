@@ -7,29 +7,72 @@
     <style>
       * {
         box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
       }
       form {
-        max-width: 500px;
+        max-width: 300px;
         margin: 30px auto;
       }
       input {
         display: block;
         width: 100%;
         margin: 10px 0;
+        padding: 5px;
+        border-width: 2px;
+        border-style: solid;
+        border-color: #cccccc;
+        border-radius: 5px;
+        box-shadow: 1px 1px 5px #333;
+        outline: none;
+      }
+      input:focus {
+        box-shadow: inset 1px 1px 5px #333;
       }
       .valid {
-        color: green;
+        border-color: green !important;
       }
       .invalid {
-        color: crimson;
+        border-color: orange !important;
+      }
+      .btn {
+        border-radius: 5px;
+        border: none;
+        padding: 5px 0;
+        background-color: #6495ed;
+        color: #f7f7f7;
+        cursor: pointer;
+        width: 100%;
+        box-shadow: 1px 1px 5px #333;
+      }
+      .btn:hover {
+        background-color: #4f77c2;
+      }
+
+      input + p.error {
+        font-size: 0.7em;
+        color: orange;
+        opacity: 0;
+      }
+      input.invalid + p.error {
+        opacity: 1;
       }
     </style>
   </head>
   <body>
     <h1>Form and Forms Events</h1>
-    <form>
+    <form autocomplete="off">
       <input type="text" name="username" placeholder="username" />
-      <input type="submit" value="submit" />
+      <p class="error">
+        this field must contains alphanumeric chars (min-length - 3)
+      </p>
+      <input type="password" name="password" placeholder="password" />
+      <p class="error">
+        this field must contains alphanumeric chars (min-length - 6)
+      </p>
+      <input type="tel" name="phone" placeholder="phone" />
+      <p class="error">this field must contains numeric chars (length - 11)</p>
+
+      <button class="btn">submit</button>
       <p class="feedback"></p>
     </form>
     <script src="sandbox.js"></script>
