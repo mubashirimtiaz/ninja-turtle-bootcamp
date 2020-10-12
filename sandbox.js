@@ -10,7 +10,7 @@ const inputs = document.querySelectorAll("input");
 
 const pattern = {
   username: /^[a-zA-Z0-9]{3,20}$/,
-  password: /^[a-zA-Z0-9@$]{3,20}$/,
+  password: /^[a-zA-Z0-9@$]{6,20}$/,
   phone: /^[0-9]{11}$/,
 };
 
