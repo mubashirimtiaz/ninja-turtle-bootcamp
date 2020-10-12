@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+        <title>Quiz App</title>
+</head>
+<body>
+    <div class="intro py-3 bg-white text-center">
+        <div class="container">
+            <div class="text-primary display-3 my-4">JS QUIZ APP</div>
+        </div>
+    </div>
+    <div class="result d-none py-3 bg-secondary text-center">
+        <div class="container">
+            <p class="text-light my-4">Your score is <span class="display-4">40%</span></p>
+        </div>
+    </div>
+
+    <div class="quiz py-4 bg-primary">
+        <div class="container">
+            <h2 class="my-5 text-white">Choose the correct answers...</h2>
+            
+            <form class="quiz-form text-light">
+                <div class="my-5">
+                    <p class="lead font-weight-normal">1. Two  and two make ____________ ?</p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q1" value="A" checked>
+                        <label class="form-check-label">Three</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q1" value="B">
+                        <label class="form-check-label">Four</label>
+                    </div>
+                </div>
+                <div class="my-5">
+                    <p class="lead font-weight-normal">2. A Quick brown fox jumps over a lazy ____________ ?</p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q2" value="A" checked>
+                        <label class="form-check-label">Dog</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q2" value="B">
+                        <label class="form-check-label">Frog</label>
+                    </div>
+                </div>
+                <div class="my-5">
+                    <p class="lead font-weight-normal">3. The Function we passed inside a method is called ____________ ?</p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q3" value="A" checked>
+                        <label class="form-check-label">Property</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q3" value="B">
+                        <label class="form-check-label">Callback Func</label>
+                    </div>
+                </div>
+                <div class="my-5">
+                    <p class="lead font-weight-normal">4. The Daffodils was written by _____ ?</p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q4" value="A" checked>
+                        <label class="form-check-label">James Clarke</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q4" value="B">
+                        <label class="form-check-label">Williams Worworth</label>
+                    </div>
+                </div>
+                <div class="my-5">
+                    <p class="lead font-weight-normal">5. Life is not a bed of _____ ?</p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q5" value="A" checked>
+                        <label class="form-check-label">Rose</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q5" value="B">
+                        <label class="form-check-label">Pen</label>
+                    </div>
+                </div>
+                <button class="btn btn-light text-dark">Submit</button>
+            </form>
+        </div>
+    </div>
+   
+    <script src="quiz.js"></script>
+</body>
+</html>
