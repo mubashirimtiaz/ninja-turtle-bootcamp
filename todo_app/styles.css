@@ -1,0 +1,15 @@
+body {
+  background-color: slateblue;
+}
+.container {
+  max-width: 500px;
+}
+ul li {
+  background-color: rgb(67, 57, 129) !important;
+}
+i {
+  cursor: pointer;
+}
+.filtered {
+  display: none !important;
+}
