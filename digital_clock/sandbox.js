@@ -1,30 +1,32 @@
-// const clock = document.querySelector(".clock");
+const clock = document.querySelector(".clock");
 
-// const testClock = () => {
-//   const now = new Date();
+const testClock = () => {
+  const now = new Date();
 
-//   const hours = now.getHours();
-//   const minutes = now.getMinutes();
-//   const seconds = now.getSeconds();
+  const hours = now.getHours();
+  const minutes = now.getMinutes();
+  const seconds = now.getSeconds();
 
-//   const template = `
-//     <span>${hours}</span> :
-//     <span>${minutes}</span> :
-//     <span>${seconds}</span>
+  const template = `
+    <span>${hours}</span> :
+    <span>${minutes}</span> :
+    <span>${seconds}</span>
 
-// `;
+`;
 
-//   clock.innerHTML = template;
-// };
+  clock.innerHTML = template;
+};
 
-// setInterval(testClock, 1000);
+setInterval(testClock, 1000);
 
-const now = new Date();
+//datefns
 
-console.log(dateFns.format(now, "YYYY"));
-console.log(dateFns.format(now, "MMM"));
-console.log(dateFns.format(now, "ddd"));
+// const now = new Date();
 
-const before = new Date("October 21 2020 22:40:20");
+// console.log(dateFns.format(now, "YYYY"));
+// console.log(dateFns.format(now, "MMM"));
+// console.log(dateFns.format(now, "ddd"));
 
-console.log(dateFns.distanceInWords(now, before, { addSuffix: true }));
+// const before = new Date("October 21 2020 22:40:20");
+
+// console.log(dateFns.distanceInWords(now, before, { addSuffix: true }));
